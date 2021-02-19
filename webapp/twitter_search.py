@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 @app.route('/q')
-def twitter_search():
+def func_query():
     search_text = request.args.get('search_text')
     tweets_list = []
     c = twint.Config()
