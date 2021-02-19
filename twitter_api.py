@@ -4,6 +4,10 @@ import json
 
 app = Flask(__name__)
 
+@app.route('/')
+def hello():
+    return 'こんにちは'
+
 @app.route('/q')
 def func_query():
     search_text = request.args.get('search_text')
